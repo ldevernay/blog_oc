@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-  return view('test');
-});
+Route::get('/', 'WelcomeController@index');
+
 Route::get('article/{n}', function($n) {
   return view('article')->withNumber($n);
 })->where('n', '[1-3]');
