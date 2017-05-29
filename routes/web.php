@@ -17,3 +17,6 @@ Route::get('article/{n}', 'ArticleController@show')->where('n', '[1-3]');
 
 Route::get('users', 'UsersController@getInfos');
 Route::post('users', 'UsersController@postInfos');
+
+Route::get('contact', 'ContactController@getForm');
+Route::post('contact', 'ContactController@postForm');
