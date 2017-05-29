@@ -14,6 +14,6 @@
 Route::get('/', function () {
   return view('test');
 });
-Route::get('{n}', function($n) {
-  return 'Je suis la page '.$n.' !';
+Route::get('article/{n}', function($n) {
+  return view('article')->withNumber($n);
 })->where('n', '[1-3]');
