@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-  return view('welcome');
+  return view('test');
 });
 Route::get('{n}', function($n) {
   return 'Je suis la page '.$n.' !';
